@@ -212,15 +212,21 @@
 /* Btn Cadastrar */
 .my-cadastro-btnCadastrar {
     width: 100%;
-    background-color: var(--cor-vermelho); 
+    background-color: var(--cor-cinzaSecundario); 
     color: var(--cor-branco);
     box-shadow: none; 
     padding: 5px;
     border-radius: 10px;
+    cursor: default; 
     border: none;
 }
-
-.my-cadastro-btnCadastrar:hover {
+.my-cadastro-btnCadastrar.enabled {
+    background-color: var(--cor-vermelho); 
+    box-shadow: var(--sombra-preta); 
+    cursor: pointer; 
+    border: none;
+}
+.my-cadastro-btnCadastrar.enabled:hover {
     opacity: 90%; 
 }
 
@@ -300,4 +306,9 @@
     align-items: center;
     font-size: 1.5rem;          /* Ajuste o tamanho da fonte conforme necessário */
     color: var(--cor-branco);
+}
+
+#centralizar h1{
+    padding-bottom: 25px;
+
 }
